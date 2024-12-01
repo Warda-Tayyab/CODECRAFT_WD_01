@@ -1,0 +1,87 @@
+.hero-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color:#ffffff;
+  box-sizing: border-box; /* Ensures padding is included in the element's total width */
+}
+
+.hero-section h1 {
+  font-size: 2.5rem ;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  color: #34495e;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.hero-image {
+  width: 50%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+/* Responsive design for tablets and below */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 30px 15px;
+  }
+
+  .hero-section h1 {
+    font-size: 1.75rem; /* Adjust heading size for tablets */
+  }
+
+  .hero-section p {
+    font-size: 1rem; /* Adjust text size for tablets */
+  }
+
+  .hero-image {
+    max-width: 600px; /* Reduce image size */
+    margin: 15px auto;
+  }
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 20px 10px;
+  }
+
+  .hero-section h1 {
+    font-size: 1.2rem; /* Further reduce heading size */
+  }
+
+  .hero-section p {
+    font-size: 0.8rem; /* Further reduce text size */
+  }
+
+  .hero-image {
+    max-width: 100%; /* Make the image take full width */
+  
+  }
+}
+
+/* Responsive design for large screens */
+@media (min-width: 1200px) {
+  .hero-section {
+    padding: 50px 40px; /* Add more padding for larger screens */
+  }
+
+  .hero-section h1 {
+    font-size: 2.2rem; /* Increase heading size */
+  }
+
+  .hero-section p {
+    font-size: 1.2rem; /* Increase text size */
+  }
+
+  .hero-image {
+    max-width: 1000px; /* Allow a larger image size */
+  }
+}

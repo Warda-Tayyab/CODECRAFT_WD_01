@@ -1,0 +1,55 @@
+.about-container {
+  text-align: center;
+  padding: 20px;
+  max-width: 90%; /* Ensure a better fit for all screen sizes */
+  margin: 0 auto;
+}
+
+.about-image {
+  width: 100%; /* Full width for small screens */
+  max-width: 600px; /* Adjusted max size for better responsiveness */
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 10px; /* Optional: adds a modern touch */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better aesthetics */
+}
+
+.about-text {
+  margin: 20px 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333; /* Adjusted color for better readability */
+  text-align: justify; /* Optional: improves text alignment for longer content */
+}
+
+/* Media Queries for Medium Screens */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 15px;
+  }
+
+  .about-image {
+    width: 80%; /* Adjust image size for medium screens */
+  }
+
+  .about-text {
+    font-size: 0.95rem; /* Slightly smaller font for medium devices */
+  }
+}
+
+/* Media Queries for Small Screens */
+@media (max-width: 480px) {
+  .about-container {
+    padding: 10px;
+  }
+
+  .about-image {
+    width: 100%; /* Full-width images for small screens */
+    border-radius: 5px; /* Adjusted radius for compact design */
+  }
+
+  .about-text {
+    font-size: 0.9rem; /* Smaller font for smaller screens */
+    line-height: 1.5; /* Adjust line spacing */
+  }
+}

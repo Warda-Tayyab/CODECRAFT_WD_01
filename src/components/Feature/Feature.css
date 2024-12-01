@@ -1,0 +1,120 @@
+.features-section {
+    padding: 40px 20px;
+    background-color: #eef2f3;
+    text-align: center;
+  }
+  
+  .features-section h2 {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .feature-item {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feature-item h3 {
+    font-size: 0.9rem;
+    color: #34495e;
+    margin-bottom: 10px;
+  }
+  
+  .feature-item p {
+    font-size: 0.7rem;
+    color: #7f8c8d;
+  }
+  
+  /* Responsive design for tablets and below */
+  @media (max-width: 768px) {
+    .features-section {
+      padding: 30px 15px;
+    }
+  
+    .features-section h2 {
+      font-size: 1.75rem; /* Adjust heading size for tablets */
+    }
+  
+    .features-grid {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust grid for smaller screens */
+      gap: 15px;
+    }
+  
+    .feature-item {
+      padding: 15px; /* Reduce padding for smaller screens */
+    }
+  
+    .feature-item h3 {
+      font-size: 1.1rem; /* Adjust heading size */
+    }
+  
+    .feature-item p {
+      font-size: 0.9rem; /* Adjust text size */
+    }
+  }
+  
+  /* Responsive design for mobile devices */
+  @media (max-width: 480px) {
+    .features-section {
+      padding: 20px 10px;
+    }
+  
+    .features-section h2 {
+      font-size: 1.2rem; /* Reduce heading size */
+    }
+  
+    .features-grid {
+      grid-template-columns: 1fr; /* Single column for mobile */
+      gap: 10px;
+    }
+  
+    .feature-item {
+      padding: 10px; /* Further reduce padding */
+    }
+  
+    .feature-item h3 {
+      font-size: 0.9rem; /* Adjust heading size */
+    }
+  
+    .feature-item p {
+      font-size: 0.7rem; /* Reduce text size */
+    }
+  }
+  
+  /* Responsive design for large screens */
+  @media (min-width: 1200px) {
+    .features-section {
+      padding: 50px 40px; /* Add more padding for larger screens */
+    }
+  
+    .features-section h2 {
+      font-size: 2.2rem; /* Increase heading size */
+    }
+  
+    .features-grid {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust grid for larger screens */
+    }
+  
+    .feature-item {
+      padding: 25px; /* Increase padding */
+    }
+  
+    .feature-item h3 {
+      font-size: 1.2rem; /* Increase heading size */
+    }
+  
+    .feature-item p {
+      font-size: 1rem; /* Increase text size */
+    }
+  }
+  

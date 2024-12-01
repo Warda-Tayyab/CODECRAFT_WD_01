@@ -1,0 +1,72 @@
+.highlights-section {
+  padding: 40px 20px;
+  background-color: #ffffff;
+  text-align: center;
+  box-sizing: border-box; /* Ensures padding is included in the element's total width */
+}
+
+/* Headings */
+.highlights-section h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* List styling */
+.highlights-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* List items */
+.highlights-section li {
+  font-size: 1.1rem;
+  color: #34495e;
+  margin: 10px 0;
+}
+
+/* Responsive design for tablets and below */
+@media (max-width: 768px) {
+  .highlights-section {
+    padding: 30px 15px;
+  }
+
+  .highlights-section h2 {
+    font-size: 1.75rem; /* Slightly smaller */
+  }
+
+  .highlights-section li {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 480px) {
+  .highlights-section {
+    padding: 20px 10px;
+  }
+
+  .highlights-section h2 {
+    font-size: 1.1rem; /* Further reduce font size */
+  }
+
+  .highlights-section li {
+    font-size: 0.8rem; /* Further reduce font size */
+  }
+}
+
+/* Responsive design for large screens */
+@media (min-width: 1200px) {
+  .highlights-section {
+    padding: 50px 40px; /* More padding for larger screens */
+  }
+
+  .highlights-section h2 {
+    font-size: 2.2rem; /* Larger heading */
+  }
+
+  .highlights-section li {
+    font-size: 1.2rem; /* Slightly larger list items */
+  }
+}
