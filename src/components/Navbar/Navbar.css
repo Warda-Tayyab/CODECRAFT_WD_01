@@ -72,14 +72,14 @@
 .menu-item a {
   text-decoration: none;
   color: white;
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 1.4rem;
   transition: color 0.3s ease, transform 0.3s ease;
   margin-right: 70px;
 }
 
 /* Hover effect on menu items */
 .menu-item a:hover {
+  font-weight: bold;
   color: #89f7fe;
   transform: scale(1.1);
 }
@@ -96,10 +96,13 @@
     flex-direction: row;
     align-items: center;
   }
+  
 
   .menu-item a {
     margin-right: 20px;
   }
+ 
+
 }
 
 @media (max-width: 768px) {
@@ -129,9 +132,10 @@
   }
 
   .menu-item a {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     padding: 0 1rem;
   }
+  
 }
 
 @media (max-width: 480px) {
@@ -142,7 +146,7 @@
   }
 
   .menu-item a {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .navbar-brand {
