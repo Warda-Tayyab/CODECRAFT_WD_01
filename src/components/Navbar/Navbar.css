@@ -2,6 +2,7 @@
 .navbar {
   position: fixed;
   top: 0;
+  left: 0; /* Ensure no space on the left */
   width: 100%;
   background-color: #063a47;
   color: white;
@@ -11,11 +12,12 @@
   align-items: center;
   z-index: 1000;
   transition: background-color 0.3s ease;
+  box-sizing: border-box; /* Include padding in width */
 }
 
 /* Navbar when scrolled */
 .navbar.scrolled {
-  background-color: #72a4af; /* Darker background when scrolled */
+  background-color: #72a4af;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -31,7 +33,6 @@
   cursor: pointer;
   flex-direction: column;
   gap: 0.3rem;
- 
 }
 
 .hamburger .bar {
@@ -75,19 +76,17 @@
   font-weight: bold;
   transition: color 0.3s ease, transform 0.3s ease;
   margin-right: 70px;
-  
 }
 
 /* Hover effect on menu items */
 .menu-item a:hover {
-  color: #89f7fe; /* Color on hover */
-  transform: scale(1.1); /* Slightly enlarge the text */
+  color: #89f7fe;
+  transform: scale(1.1);
 }
 
-
 .close-icon {
-  font-size: 24px; /* Adjust as necessary */
-  color: #fff; /* Change color to fit your theme */
+  font-size: 24px;
+  color: #fff;
 }
 
 /* Responsive Design for Mobile */
@@ -95,13 +94,11 @@
   .menu {
     display: flex;
     flex-direction: row;
-    gap: 0rem;
     align-items: center;
   }
 
   .menu-item a {
     margin-right: 20px;
-    gap: 2rem;
   }
 }
 
@@ -112,7 +109,7 @@
     width: 100%;
     position: absolute;
     top: 100%;
-    left: 0;
+    left: 0; /* Align menu to the left */
     background-color: #063a47;
     gap: 1rem;
     padding: 1rem 0;
@@ -124,7 +121,7 @@
 
   .hamburger {
     display: flex;
-    margin-right: 3rem; /* Adjust for spacing */
+    margin-right: 1rem;
   }
 
   .navbar {
@@ -140,6 +137,8 @@
 @media (max-width: 480px) {
   .navbar {
     padding: 0.5rem;
+    margin: 0; /* Remove margin to fix spacing */
+    width: 100%; /* Ensure full width */
   }
 
   .menu-item a {
@@ -149,8 +148,9 @@
   .navbar-brand {
     font-size: 1.5rem;
   }
+
   .hamburger {
     display: flex;
-    margin-right: 2rem; /* Adjust for spacing */
+    margin-right: 1rem; /* Adjust for spacing */
   }
 }

@@ -9,11 +9,12 @@ import Contact from "./Pages/Contact";
 
 const App = () => {
   return (
-    <Router>
+    <Router  basename="/CodeCRAFT_WD_01">
       <Navbar />
       
       <div style={{ padding: "50px" }}>
         <Routes>
+      
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
